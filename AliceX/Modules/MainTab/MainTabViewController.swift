@@ -27,12 +27,13 @@ class MainTabViewController: PageboyViewController {
     var defaultPage: MainTab = MainTab.asset
 
     var vcs: [UIViewController] = []
-    let minVC = MiniAppViewController()
+    let minVC = RNModule.makeVCwithApp(item: .app(name: "DAOstack"))
+//        MiniAppViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        minVC.tabRef = tabcontainer
+//        minVC.tabRef = tabcontainer
         vcs = [minVC, AssetViewController(), SettingViewController.make(hideBackButton: true)]
 
         dataSource = self
@@ -125,10 +126,10 @@ extension MainTabViewController: PageboyViewControllerDelegate {
             tab1Icon.alpha = alpha
             tab2Icon.alpha = 1 - alpha
 
-            if minVC.isTriggle {
-                tabcontainer.alpha = x
-                return
-            }
+//            if minVC.isTriggle {
+//                tabcontainer.alpha = x
+//                return
+//            }
         }
 
         if x >= 1, x <= 2.0 {
@@ -149,7 +150,7 @@ extension MainTabViewController: PageboyViewControllerDelegate {
             return
         }
 
-        tabcontainer.alpha = minVC.isTriggle ? 0 : 1
+//        tabcontainer.alpha = minVC.isTriggle ? 0 : 1
     }
 
     func pageboyViewController(_: PageboyViewController,
