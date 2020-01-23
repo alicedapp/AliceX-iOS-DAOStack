@@ -17,6 +17,7 @@ enum MainTab: Int, CaseIterable {
         switch self {
         case .mini:
             return MiniAppViewController()
+//            return RNModule.makeVCwithApp(item: HomeItem.app(name: "DAOStack"))
         case .asset:
             return AssetViewController()
         case .setting:
