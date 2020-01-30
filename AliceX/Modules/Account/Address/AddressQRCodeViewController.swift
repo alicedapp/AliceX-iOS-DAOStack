@@ -38,7 +38,8 @@ class AddressQRCodeViewController: UIViewController {
     var segmentedView = JXSegmentedView()
     var listContainerView: JXSegmentedListContainerView!
 
-    var chains = BlockChain.allCases
+    var chains: [BlockChain] = BlockChain.allCases
+//        [.Ethereum]
 //        WatchingCoinHelper.shared.blockchainList()
 
     override func viewDidLoad() {

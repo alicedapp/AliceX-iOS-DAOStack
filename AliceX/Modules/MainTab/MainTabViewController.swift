@@ -24,7 +24,7 @@ class MainTabViewController: PageboyViewController {
 
     var tabs = MainTab.allCases
 
-    var defaultPage: MainTab = MainTab.asset
+    var defaultPage: MainTab = MainTab.mini
 
     var vcs: [UIViewController] = []
     let minVC = RNModule.makeVCwithApp(item: .app(name: "DAOstack"))
@@ -34,7 +34,7 @@ class MainTabViewController: PageboyViewController {
         super.viewDidLoad()
 
 //        minVC.tabRef = tabcontainer
-        vcs = [minVC, AssetViewController(), SettingViewController.make(hideBackButton: true)]
+        vcs = [minVC, AssetViewController()]
 
         dataSource = self
         delegate = self
@@ -42,7 +42,7 @@ class MainTabViewController: PageboyViewController {
         view.backgroundColor = .clear
         Defaults[\.isFirstTimeOpen] = false
 
-        for tag in 1 ... 3 {
+        for tag in 1 ... 2 {
             guard let tagView = view.viewWithTag(tag) else {
                 continue
             }
@@ -120,23 +120,23 @@ extension MainTabViewController: PageboyViewControllerDelegate {
                                direction _: PageboyViewController.NavigationDirection,
                                animated _: Bool) {
 //            print("didScrollToPosition: \(position)")
-        let x = position.x
-        if x >= 0, x <= 1.0 {
-            let alpha = x
-            tab1Icon.alpha = alpha
-            tab2Icon.alpha = 1 - alpha
-
-//            if minVC.isTriggle {
-//                tabcontainer.alpha = x
-//                return
-//            }
-        }
-
-        if x >= 1, x <= 2.0 {
-            let alpha = x - 1
-            tab2Icon.alpha = alpha
-            tab3Icon.alpha = 1 - alpha
-        }
+//        let x = position.x
+//        if x >= 0, x <= 1.0 {
+//            let alpha = x
+//            tab1Icon.alpha = alpha
+//            tab2Icon.alpha = 1 - alpha
+//
+////            if minVC.isTriggle {
+////                tabcontainer.alpha = x
+////                return
+////            }
+//        }
+//
+//        if x >= 1, x <= 2.0 {
+//            let alpha = x - 1
+//            tab2Icon.alpha = alpha
+//            tab3Icon.alpha = 1 - alpha
+//        }
     }
 
     func pageboyViewController(_: PageboyViewController,

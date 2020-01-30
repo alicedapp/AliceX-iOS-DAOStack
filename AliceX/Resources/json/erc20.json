@@ -1,5 +1,11 @@
 [
     {
+        "id": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
+        "decimals": "18",
+        "name": "DAOstack Token",
+        "symbol": "GEN"
+    },
+    {
         "id": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
         "decimals": "18",
         "name": "Sai Stablecoin",

@@ -11,7 +11,7 @@ import Foundation
 enum MainTab: Int, CaseIterable {
     case mini
     case asset
-    case setting
+//    case setting
 
     var vc: UIViewController {
         switch self {
@@ -20,9 +20,9 @@ enum MainTab: Int, CaseIterable {
 //            return RNModule.makeVCwithApp(item: HomeItem.app(name: "DAOStack"))
         case .asset:
             return AssetViewController()
-        case .setting:
-            let vc = SettingViewController.make(hideBackButton: true)
-            return vc
+//        case .setting:
+//            let vc = SettingViewController.make(hideBackButton: true)
+//            return vc
         }
     }
 
@@ -32,8 +32,8 @@ enum MainTab: Int, CaseIterable {
             return UIImage(named: "back")!
         case .asset:
             return UIImage(named: "back")!
-        case .setting:
-            return UIImage(named: "back")!
+//        case .setting:
+//            return UIImage(named: "back")!
 //        case .transaction:
 //            return UIImage(named: "back")!
 //        case .profile:

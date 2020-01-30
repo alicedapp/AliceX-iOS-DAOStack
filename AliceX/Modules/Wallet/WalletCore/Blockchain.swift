@@ -16,6 +16,8 @@ enum BlockChain: String, CaseIterable {
     case Binance
 //    case Cosmos
 //    case unknow
+    
+    static var allCases: [BlockChain] = [.Ethereum]
 }
 
 extension BlockChain {

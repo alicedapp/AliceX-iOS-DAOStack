@@ -171,7 +171,9 @@ extension WatchingCoinHelper {
             }.onFailure { error in
                 if let err = error, err._code == -100 {
                     self.noCache = true
-                    self.list = [Coin.coin(chain: .Ethereum)]
+                    self.list = [Coin.coin(chain: .Ethereum),
+                                 Coin.ERC20(address: "0x543ff227f64aa17ea132bf9886cab5db55dcaddf") // DAOstack GEN
+                    ]
                     seal.fulfill(self.list)
                 } else {
                     seal.reject(error ?? MyError.FoundNil("Fetch Cache Failed: \(cacheKey)"))
