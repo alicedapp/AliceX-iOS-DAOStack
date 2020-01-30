@@ -25,8 +25,8 @@ target 'AliceX' do
   pod 'HanekeSwift',  git: 'https://github.com/Haneke/HanekeSwift', branch: 'master'
   pod 'BonMot'
   pod 'SwiftyUserDefaults',  git: 'https://github.com/sunshinejr/SwiftyUserDefaults', branch: 'master'
-  pod 'TrustWalletCore'
-   
+  pod 'TrustWalletCore', '~> 0.12.33'
+  
   pod 'VBFPopFlatButton'
   pod "ViewAnimator"
 #  pod 'SVGKit'

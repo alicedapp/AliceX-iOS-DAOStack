@@ -574,7 +574,7 @@
 		15AF403822E043550059FB18 /* TransactionManager+Gas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionManager+Gas.swift"; sourceTree = "<group>"; };
 		15AF403A22E04DF50059FB18 /* Coinmarketcap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coinmarketcap.swift; sourceTree = "<group>"; };
 		15AF403E22E05A5B0059FB18 /* CoinMarketCapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapModel.swift; sourceTree = "<group>"; };
-		15B86B5522AA043F00110C06 /* AliceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B86B5522AA043F00110C06 /* DAOstack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAOstack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B86B6222AA044000110C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15B86B6422AA044000110C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15B86BAC22AA1C9000110C06 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
@@ -1550,7 +1550,7 @@
 		15B86B5622AA043F00110C06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15B86B5522AA043F00110C06 /* AliceX.app */,
+				15B86B5522AA043F00110C06 /* DAOstack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2107,9 +2107,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		15B86B5422AA043F00110C06 /* AliceX */ = {
+		15B86B5422AA043F00110C06 /* DAOstack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15B86B6722AA044000110C06 /* Build configuration list for PBXNativeTarget "AliceX" */;
+			buildConfigurationList = 15B86B6722AA044000110C06 /* Build configuration list for PBXNativeTarget "DAOstack" */;
 			buildPhases = (
 				46EE0A69CC98A3BCF47B10F5 /* [CP] Check Pods Manifest.lock */,
 				15B86BA422AA09D200110C06 /* Headers */,
@@ -2127,9 +2127,9 @@
 			);
 			dependencies = (
 			);
-			name = AliceX;
+			name = DAOstack;
 			productName = AliceX;
-			productReference = 15B86B5522AA043F00110C06 /* AliceX.app */;
+			productReference = 15B86B5522AA043F00110C06 /* DAOstack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2156,7 +2156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 15B86B5022AA043F00110C06 /* Build configuration list for PBXProject "AliceX" */;
+			buildConfigurationList = 15B86B5022AA043F00110C06 /* Build configuration list for PBXProject "DAOstack" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2169,7 +2169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15B86B5422AA043F00110C06 /* AliceX */,
+				15B86B5422AA043F00110C06 /* DAOstack */,
 			);
 		};
 /* End PBXProject section */
@@ -2973,8 +2973,8 @@
 					"-weak_framework",
 					"\"Combine\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alice.dapp.lmcmz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.zed.daostack;
+				PRODUCT_NAME = DAOstack;
 				SWIFT_OBJC_BRIDGING_HEADER = "AliceX/ReactNative/AliceX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -3172,8 +3172,8 @@
 					"-weak_framework",
 					"\"Combine\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alice.dapp.lmcmz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.zed.daostack;
+				PRODUCT_NAME = DAOstack;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "AliceX/ReactNative/AliceX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
@@ -3185,7 +3185,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15B86B5022AA043F00110C06 /* Build configuration list for PBXProject "AliceX" */ = {
+		15B86B5022AA043F00110C06 /* Build configuration list for PBXProject "DAOstack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15B86B6522AA044000110C06 /* Debug */,
@@ -3194,7 +3194,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15B86B6722AA044000110C06 /* Build configuration list for PBXNativeTarget "AliceX" */ = {
+		15B86B6722AA044000110C06 /* Build configuration list for PBXNativeTarget "DAOstack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15B86B6822AA044000110C06 /* Debug */,
