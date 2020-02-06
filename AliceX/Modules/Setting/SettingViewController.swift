@@ -34,6 +34,7 @@ class SettingViewController: BaseViewController {
     
     @IBOutlet var navBarHeight: NSLayoutConstraint!
     @IBOutlet var navBar: UIView!
+    @IBOutlet var titleLabel: UILabel!
     
     class func make(hideBackButton: Bool) -> SettingViewController {
         let vc = SettingViewController()
@@ -86,6 +87,7 @@ class SettingViewController: BaseViewController {
         if hideBackButton {
             scrollView.alwaysBounceVertical = true
             scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 80, right: 0)
+            titleLabel.isHeroEnabled = false
         }
 
         if #available(iOS 13.0, *) {
