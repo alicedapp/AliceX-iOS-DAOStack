@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalletRNViewController" customModule="DAOstack" customModuleProvider="target">
+            <connections>
+                <outlet property="container" destination="ahK-Al-4cj" id="aRI-sf-WO3"/>
+                <outlet property="segmentedContainer" destination="7lz-UY-tja" id="q0e-hY-aV9"/>
+                <outlet property="view" destination="n3P-t6-LJe" id="HLr-0c-O63"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="n3P-t6-LJe">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXz-Bd-2ss">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lz-UY-tja">
+                            <rect key="frame" x="70" y="0.0" width="274" height="59"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3c-GH-OxF" customClass="UIControl">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="59.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close-dark" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-SP-2U5">
+                                    <rect key="frame" x="21.5" y="21.5" width="17" height="17"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" name="Alice-White"/>
+                            <constraints>
+                                <constraint firstItem="nh7-SP-2U5" firstAttribute="centerX" secondItem="v3c-GH-OxF" secondAttribute="centerX" id="3BS-oP-TEg"/>
+                                <constraint firstAttribute="width" constant="60" id="hg7-qY-ata"/>
+                                <constraint firstItem="nh7-SP-2U5" firstAttribute="centerY" secondItem="v3c-GH-OxF" secondAttribute="centerY" id="x6l-jw-h4f"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="backArrow"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="backButtonClicked" destination="-1" eventType="touchUpInside" id="qQe-bh-1AF"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ziv-xo-1OU">
+                            <rect key="frame" x="0.0" y="59.5" width="414" height="0.5"/>
+                            <color key="backgroundColor" name="Alice-LightGrey"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="AuA-HQ-Xhr"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="navLine"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="Alice-White"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="1aB-ML-iab"/>
+                        <constraint firstItem="v3c-GH-OxF" firstAttribute="top" secondItem="nXz-Bd-2ss" secondAttribute="top" id="1xt-Wh-gob"/>
+                        <constraint firstItem="Ziv-xo-1OU" firstAttribute="top" secondItem="7lz-UY-tja" secondAttribute="bottom" constant="0.5" id="4BA-F0-nxR"/>
+                        <constraint firstItem="7lz-UY-tja" firstAttribute="centerX" secondItem="nXz-Bd-2ss" secondAttribute="centerX" id="4ud-Ak-QeX"/>
+                        <constraint firstItem="v3c-GH-OxF" firstAttribute="leading" secondItem="nXz-Bd-2ss" secondAttribute="leading" id="DXP-Lf-53Y"/>
+                        <constraint firstAttribute="bottom" secondItem="v3c-GH-OxF" secondAttribute="bottom" constant="0.5" id="E5P-YB-pYl"/>
+                        <constraint firstItem="Ziv-xo-1OU" firstAttribute="leading" secondItem="nXz-Bd-2ss" secondAttribute="leading" id="VEY-HH-bjc"/>
+                        <constraint firstAttribute="bottom" secondItem="Ziv-xo-1OU" secondAttribute="bottom" id="W3Q-Iq-GXc"/>
+                        <constraint firstItem="7lz-UY-tja" firstAttribute="top" secondItem="nXz-Bd-2ss" secondAttribute="top" id="YgZ-sY-2WV"/>
+                        <constraint firstAttribute="trailing" secondItem="Ziv-xo-1OU" secondAttribute="trailing" id="c5M-DI-3Jm"/>
+                        <constraint firstItem="7lz-UY-tja" firstAttribute="leading" secondItem="v3c-GH-OxF" secondAttribute="trailing" constant="10" id="yrd-w2-M4h"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AliceNaviBar"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahK-Al-4cj">
+                    <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="Alice-White"/>
+            <constraints>
+                <constraint firstItem="nXz-Bd-2ss" firstAttribute="leading" secondItem="eKZ-Ke-Bgd" secondAttribute="leading" id="Iki-LC-O8J"/>
+                <constraint firstItem="ahK-Al-4cj" firstAttribute="trailing" secondItem="eKZ-Ke-Bgd" secondAttribute="trailing" id="IlN-Rk-v7N"/>
+                <constraint firstAttribute="bottom" secondItem="ahK-Al-4cj" secondAttribute="bottom" id="QLx-O6-vTm"/>
+                <constraint firstItem="ahK-Al-4cj" firstAttribute="top" secondItem="nXz-Bd-2ss" secondAttribute="bottom" id="VbV-lN-Slx"/>
+                <constraint firstAttribute="trailing" secondItem="nXz-Bd-2ss" secondAttribute="trailing" id="XdC-fJ-cve"/>
+                <constraint firstItem="ahK-Al-4cj" firstAttribute="leading" secondItem="eKZ-Ke-Bgd" secondAttribute="leading" id="gcE-8V-Ia5"/>
+                <constraint firstItem="nXz-Bd-2ss" firstAttribute="top" secondItem="eKZ-Ke-Bgd" secondAttribute="top" id="vQv-nG-mIC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="eKZ-Ke-Bgd"/>
+            <point key="canvasLocation" x="-588.40579710144937" y="121.875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-dark" width="17" height="17"/>
+        <namedColor name="Alice-LightGrey">
+            <color red="0.85900002717971802" green="0.875" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Alice-White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="AliceX" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="DAOstack" customModuleProvider="target">
             <connections>
                 <outlet property="accountLabel" destination="AT1-9V-oYa" id="X3q-wt-6Fq"/>
                 <outlet property="backButton" destination="JnJ-FT-awO" id="qvX-Ek-KYa"/>
@@ -19,6 +19,8 @@
                 <outlet property="darkLabel" destination="VPn-pK-k4B" id="tPS-q2-F9K"/>
                 <outlet property="darkSwitch" destination="MJH-ef-ITT" id="zGo-As-J82"/>
                 <outlet property="darkTheme" destination="hA9-Uo-7g0" id="wIL-Qn-b89"/>
+                <outlet property="navBar" destination="yTs-RM-7Vg" id="0db-rz-GmX"/>
+                <outlet property="navBarHeight" destination="Ge1-Fe-NWy" id="wC6-ho-8jo"/>
                 <outlet property="networkLabel" destination="dzC-sl-izU" id="csg-8Z-ftW"/>
                 <outlet property="newBackupView" destination="RCe-ki-6Yc" id="Z2s-ww-m4R"/>
                 <outlet property="notiSwitch" destination="h0X-zW-Sc4" id="1ef-Yr-1W6"/>
@@ -120,7 +122,7 @@
                                                 <constraint firstItem="Gio-Ar-e2g" firstAttribute="leading" secondItem="JAB-4J-eLa" secondAttribute="leading" constant="20" id="OrY-YP-wE1"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JhD-WR-PeV" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JhD-WR-PeV" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="20" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkB-qm-yxn">
@@ -230,7 +232,7 @@
                                                 <constraint firstItem="0Sj-Fk-0NW" firstAttribute="centerY" secondItem="SOV-TY-OkO" secondAttribute="centerY" id="n5V-PI-fRD"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJk-zM-O6a" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJk-zM-O6a" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="100" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ax9-hO-2hW">
@@ -290,7 +292,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="j4l-yw-rKT" secondAttribute="bottom" id="zfR-mR-9EG"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GxD-0N-fLl" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GxD-0N-fLl" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="160" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tt6-5g-rOf">
@@ -358,7 +360,7 @@
                                                 <action selector="netButtonClicked" destination="-1" eventType="touchUpInside" id="EJf-vq-fxj"/>
                                             </connections>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6V-Dd-bOX" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6V-Dd-bOX" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="220" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUC-I3-z2a">
@@ -426,7 +428,7 @@
                                                 <action selector="currencyBtnClicked" destination="-1" eventType="touchUpInside" id="gq6-D7-TFd"/>
                                             </connections>
                                         </view>
-                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blo-Zv-Vot" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blo-Zv-Vot" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="280" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beV-TF-16L">
@@ -511,7 +513,7 @@
                                                 <action selector="mnemonicsClicked" destination="-1" eventType="touchUpInside" id="bWz-FZ-R0x"/>
                                             </connections>
                                         </view>
-                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbM-4W-MVC" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbM-4W-MVC" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="280" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUJ-cN-q9j">
@@ -571,7 +573,7 @@
                                                 <action selector="replaceClicked" destination="-1" eventType="touchUpInside" id="kZo-Me-OlT"/>
                                             </connections>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qf-Ck-oKm" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qf-Ck-oKm" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="280" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNT-qc-h9r">
@@ -626,7 +628,7 @@
                                                 <action selector="cacheButtonClicked" destination="-1" eventType="touchUpInside" id="hP8-3v-nKC"/>
                                             </connections>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg9-8t-qmW" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg9-8t-qmW" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="340" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1K-nJ-wYN">
@@ -703,7 +705,7 @@
                                                 <constraint firstAttribute="height" constant="20" id="xqX-gY-REo"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NK2-Dx-5az" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NK2-Dx-5az" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="420" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9V-Sc-xNs">
@@ -763,7 +765,7 @@
                                                 <action selector="aboutBtnClicked" destination="-1" eventType="touchUpInside" id="p8i-4V-dZ2"/>
                                             </connections>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hA9-Uo-7g0" customClass="BaseControl" customModule="AliceX" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hA9-Uo-7g0" customClass="BaseControl" customModule="DAOstack" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="480" width="414" height="60"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVo-X6-dBM">
@@ -859,7 +861,6 @@
                 <constraint firstAttribute="trailing" secondItem="yTs-RM-7Vg" secondAttribute="trailing" id="uJW-kA-28W"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ckU-Ov-Q5N" secondAttribute="trailing" id="ux2-R1-a4e"/>
             </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </view>

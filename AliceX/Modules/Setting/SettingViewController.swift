@@ -10,6 +10,7 @@ import PromiseKit
 import SPStorkController
 import SwiftyUserDefaults
 import UIKit
+import JXSegmentedView
 
 class SettingViewController: BaseViewController {
     @IBOutlet var accountLabel: UILabel!
@@ -28,7 +29,12 @@ class SettingViewController: BaseViewController {
     @IBOutlet var darkSwitch: UISwitch!
     @IBOutlet var darkImage: UIImageView!
     @IBOutlet var notiSwitch: UISwitch!
-
+    
+    var hideNavBar: Bool = false
+    
+    @IBOutlet var navBarHeight: NSLayoutConstraint!
+    @IBOutlet var navBar: UIView!
+    
     class func make(hideBackButton: Bool) -> SettingViewController {
         let vc = SettingViewController()
         vc.hideBackButton = hideBackButton
@@ -58,6 +64,11 @@ class SettingViewController: BaseViewController {
 //                self.backupView.transform = .identity
 //            }
         }
+        
+        if hideNavBar {
+            navBarHeight.constant = 0
+            navBar.isHidden = true
+        }
 
         accountLabel.text = WalletManager.currentAccount?.name
 
@@ -85,6 +96,7 @@ class SettingViewController: BaseViewController {
             return
         }
         darkTheme.isHidden = true
+        
     }
 
     @objc func mnemonicBackuped() {
@@ -217,5 +229,11 @@ class SettingViewController: BaseViewController {
                 print("App icon changed successfully")
             }
         })
+    }
+}
+
+extension SettingViewController {
+    public override func listView() -> UIView {
+        return view
     }
 }

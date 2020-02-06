@@ -140,7 +140,9 @@ class AssetViewController: BaseViewController {
     }
 
     @IBAction func settingClick() {
-        let vc = SettingViewController()
+        let vc =
+            WalletRNViewController()
+//            SettingViewController()
         let navi = BaseNavigationController(rootViewController: vc)
 //        let transitionDelegate = SPStorkTransitioningDelegate()
 //        navi.transitioningDelegate = transitionDelegate

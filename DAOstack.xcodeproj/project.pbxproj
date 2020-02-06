@@ -156,6 +156,8 @@
 		1573B52F2375A7C300257A1A /* KDDragAndDropManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573B52D2375A7C300257A1A /* KDDragAndDropManager.swift */; };
 		1573B5322375B1D200257A1A /* CoinReOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573B5302375B1D200257A1A /* CoinReOrderCell.swift */; };
 		1573B5332375B1D200257A1A /* CoinReOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1573B5312375B1D200257A1A /* CoinReOrderCell.xib */; };
+		1576169723E6755900A64FFA /* CoinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576169523E6755900A64FFA /* CoinDetailViewController.swift */; };
+		1576169823E6755900A64FFA /* CoinDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1576169623E6755900A64FFA /* CoinDetailViewController.xib */; };
 		15764E1222E9E12900784848 /* TransferPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15764E1022E9E12900784848 /* TransferPopUp.swift */; };
 		15764E1322E9E12900784848 /* TransferPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15764E1122E9E12900784848 /* TransferPopUp.xib */; };
 		15764E1522E9F93A00784848 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15764E1422E9F93A00784848 /* GCD.swift */; };
@@ -178,6 +180,8 @@
 		157B8DF722E748F70092B428 /* BrowserWrapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B8DF622E748F70092B428 /* BrowserWrapperViewController.swift */; };
 		157C39F6236D40AD004CED9B /* PriceHelper+Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157C39F5236D40AD004CED9B /* PriceHelper+Blockchain.swift */; };
 		157FB521239F52E700BFB33F /* web3-min.js in Resources */ = {isa = PBXBuildFile; fileRef = 157FB520239F52E700BFB33F /* web3-min.js */; };
+		158124E723EC54800021B62E /* WalletRNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158124E523EC54800021B62E /* WalletRNViewController.swift */; };
+		158124E823EC54800021B62E /* WalletRNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158124E623EC54800021B62E /* WalletRNViewController.xib */; };
 		1581EC1122D8390D00B74F30 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1581EC0F22D8390D00B74F30 /* BrowserViewController.swift */; };
 		1581EC1222D8390D00B74F30 /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1581EC1022D8390D00B74F30 /* BrowserViewController.xib */; };
 		1581EC1722D8566E00B74F30 /* EditAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1581EC1522D8566E00B74F30 /* EditAddressViewController.swift */; };
@@ -492,6 +496,8 @@
 		1573B52D2375A7C300257A1A /* KDDragAndDropManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDDragAndDropManager.swift; sourceTree = "<group>"; };
 		1573B5302375B1D200257A1A /* CoinReOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinReOrderCell.swift; sourceTree = "<group>"; };
 		1573B5312375B1D200257A1A /* CoinReOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinReOrderCell.xib; sourceTree = "<group>"; };
+		1576169523E6755900A64FFA /* CoinDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewController.swift; sourceTree = "<group>"; };
+		1576169623E6755900A64FFA /* CoinDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinDetailViewController.xib; sourceTree = "<group>"; };
 		15764E1022E9E12900784848 /* TransferPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPopUp.swift; sourceTree = "<group>"; };
 		15764E1122E9E12900784848 /* TransferPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferPopUp.xib; sourceTree = "<group>"; };
 		15764E1422E9F93A00784848 /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
@@ -514,6 +520,8 @@
 		157B8DF622E748F70092B428 /* BrowserWrapperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserWrapperViewController.swift; sourceTree = "<group>"; };
 		157C39F5236D40AD004CED9B /* PriceHelper+Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceHelper+Blockchain.swift"; sourceTree = "<group>"; };
 		157FB520239F52E700BFB33F /* web3-min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "web3-min.js"; sourceTree = "<group>"; };
+		158124E523EC54800021B62E /* WalletRNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRNViewController.swift; sourceTree = "<group>"; };
+		158124E623EC54800021B62E /* WalletRNViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletRNViewController.xib; sourceTree = "<group>"; };
 		1581EC0F22D8390D00B74F30 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		1581EC1022D8390D00B74F30 /* BrowserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowserViewController.xib; sourceTree = "<group>"; };
 		1581EC1522D8566E00B74F30 /* EditAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressViewController.swift; sourceTree = "<group>"; };
@@ -1214,6 +1222,15 @@
 			path = DragableCollectionView;
 			sourceTree = "<group>";
 		};
+		1576169423E6745D00A64FFA /* CoinDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1576169523E6755900A64FFA /* CoinDetailViewController.swift */,
+				1576169623E6755900A64FFA /* CoinDetailViewController.xib */,
+			);
+			path = CoinDetail;
+			sourceTree = "<group>";
+		};
 		15764E0F22E9E10300784848 /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1272,6 +1289,15 @@
 				158A909423713756002F9F18 /* BlockchainNetwork.swift */,
 			);
 			path = Blockchain;
+			sourceTree = "<group>";
+		};
+		158124E423EC54600021B62E /* WalletRN */ = {
+			isa = PBXGroup;
+			children = (
+				158124E523EC54800021B62E /* WalletRNViewController.swift */,
+				158124E623EC54800021B62E /* WalletRNViewController.xib */,
+			);
+			path = WalletRN;
 			sourceTree = "<group>";
 		};
 		1581EC0E22D837FE00B74F30 /* Browser */ = {
@@ -1695,6 +1721,7 @@
 		15B86BB422AA1DAF00110C06 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				158124E423EC54600021B62E /* WalletRN */,
 				15E802FD23D1BF2C00CBE7FB /* NFT */,
 				1528139223BF096800EE847D /* Profile */,
 				1533C999237ABAFB0052010A /* MiniApp */,
@@ -2063,6 +2090,7 @@
 		15FFCF842366026400E0BB80 /* Coins */ = {
 			isa = PBXGroup;
 			children = (
+				1576169423E6745D00A64FFA /* CoinDetail */,
 				15F197B7238182BD00960DE1 /* CustomCoin */,
 				153B0448236D7C68008A2139 /* Cell */,
 				15D34523236C76CD0085EFFC /* WatchingCoin */,
@@ -2193,6 +2221,7 @@
 				15E3C900234472B700DCADBF /* BackupViewController.xib in Resources */,
 				1578EE2323C5A75000ED69CB /* MnemonicTableViewCell.xib in Resources */,
 				15015DA92365AD27008DDD80 /* AssetCoinHeaderCell.xib in Resources */,
+				1576169823E6755900A64FFA /* CoinDetailViewController.xib in Resources */,
 				15E71E05237161E00069BFD2 /* env.json in Resources */,
 				15BFA5A022DEF594006BB60D /* Assets.xcassets in Resources */,
 				15300E65233E373F004E9144 /* WCCustomMethodVC.xib in Resources */,
@@ -2229,6 +2258,7 @@
 				157AA56C22CC6CE0008AF3A5 /* SettingViewController.xib in Resources */,
 				15F197C02382D6BF00960DE1 /* AssetDeatilViewController.xib in Resources */,
 				155FACF3233947EB0002B478 /* PayButtonView.xib in Resources */,
+				158124E823EC54800021B62E /* WalletRNViewController.xib in Resources */,
 				153A654922C9CE2B0035EB2C /* LandingViewController.xib in Resources */,
 				15072532233A2172009C9D51 /* WCConnectPopup.xib in Resources */,
 				158FAC2D233CA20600F281B1 /* WCControlPanel.xib in Resources */,
@@ -2472,6 +2502,7 @@
 				1527873A22AE216C00D63C7F /* TransactionManager.swift in Sources */,
 				15F197BF2382D6BF00960DE1 /* AssetDeatilViewController.swift in Sources */,
 				15BC4DB022DA465900313CA9 /* BrowserPanelView.swift in Sources */,
+				158124E723EC54800021B62E /* WalletRNViewController.swift in Sources */,
 				15E3C9032344A12A00DCADBF /* MnemonicsViewController.swift in Sources */,
 				15477B4922E1AE18008E3230 /* API.swift in Sources */,
 				15E802FB23D193B800CBE7FB /* SendERC721PopUp.swift in Sources */,
@@ -2587,6 +2618,7 @@
 				158E1D00236554520081C1AA /* AssetCoinCell.swift in Sources */,
 				153B2810231BB8C60062B2E8 /* PinListViewController.swift in Sources */,
 				1525E79323311C18009DAB83 /* AmberData.swift in Sources */,
+				1576169723E6755900A64FFA /* CoinDetailViewController.swift in Sources */,
 				15BC4DB422DA495000313CA9 /* BaseView.swift in Sources */,
 				153B280A231B7EBF0062B2E8 /* FloatPinView.swift in Sources */,
 				15D34525236C76E20085EFFC /* WatchingCoinHelper.swift in Sources */,
