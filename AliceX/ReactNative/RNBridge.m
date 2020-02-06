@@ -104,6 +104,7 @@ RCT_EXTERN_METHOD(read:(NSString *)contractAddress
 @interface RCT_EXTERN_MODULE(NativeVCModule, NSObject)
 
 RCT_EXTERN_METHOD(setting)
+RCT_EXTERN_METHOD(walletAndSetting)
 RCT_EXTERN_METHOD(browser:(NSString *)url)
 RCT_EXTERN_METHOD(qrScanner:(RCTPromiseResolveBlock)resolve
                   reject:(RCTPromiseRejectBlock)reject)

@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         if WalletManager.hasWallet() {
             WalletCore.shared.loadFromCache()
-            vc = MainTabViewController()
+            vc = RNModule.makeVCwithApp(item: .app(name: "DAOstack"))
         } else {
             vc = LandingViewController()
         }

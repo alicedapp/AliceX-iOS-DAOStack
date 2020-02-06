@@ -25,6 +25,21 @@ class NativeVCModule: NSObject {
             topVC?.present(navi, animated: true, completion: nil)
         }
     }
+    
+    @objc func walletAndSetting() {
+        DispatchQueue.main.async {
+            let topVC = UIApplication.topViewController()
+            let modal = WalletRNViewController()
+            let navi = BaseNavigationController(rootViewController: modal)
+            let transitionDelegate = SPStorkTransitioningDelegate()
+            navi.transitioningDelegate = transitionDelegate
+            navi.modalPresentationStyle = .custom
+            transitionDelegate.showIndicator = false
+            transitionDelegate.indicatorColor = UIColor.white
+            transitionDelegate.hideIndicatorWhenScroll = true
+            topVC?.present(navi, animated: true, completion: nil)
+        }
+    }
 
     @objc func browser(_ url: String) {
         DispatchQueue.main.async {
