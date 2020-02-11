@@ -45,7 +45,7 @@
                                 <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="backArrow"/>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="backButtonClicked" destination="-1" eventType="touchUpInside" id="qQe-bh-1AF"/>
+                                <action selector="closeButtonClicked" destination="-1" eventType="touchUpInside" id="PBL-1S-0UJ"/>
                             </connections>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ziv-xo-1OU">
