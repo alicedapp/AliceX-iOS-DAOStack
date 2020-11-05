@@ -9,12 +9,15 @@
 import Foundation
 
 enum MainTab: Int, CaseIterable {
+    case chat
     case mini
     case asset
     case setting
 
     var vc: UIViewController {
         switch self {
+        case .chat:
+            return ChatRoomViewController()
         case .mini:
             return MiniAppViewController()
         case .asset:
@@ -27,6 +30,8 @@ enum MainTab: Int, CaseIterable {
 
     var icon: UIImage {
         switch self {
+        case .chat:
+            return UIImage(named: "back")!
         case .mini:
             return UIImage(named: "back")!
         case .asset:

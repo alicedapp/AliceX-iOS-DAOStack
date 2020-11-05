@@ -7,7 +7,7 @@
 //
 
 import BigInt
-import CodePush
+// import CodePush
 import FirebaseCore
 import FirebaseInstanceID
 import FirebaseMessaging
@@ -95,11 +95,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     }
 
     func sourceURL(bridge _: RCTBridge?) -> URL? {
-        #if DEBUG
-            return RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
-        #else
-            return CodePush.bundleURL()
-        #endif
+//        #if DEBUG
+        return RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
+//        #else
+//            return CodePush.bundleURL()
+//        #endif
     }
 
     func applicationWillResignActive(_: UIApplication) {

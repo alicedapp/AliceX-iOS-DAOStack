@@ -9,7 +9,7 @@
 import BigInt
 import Foundation
 import PromiseKit
-import TrustWalletCore
+import WalletCore
 
 extension WalletCore {
     func binanceAccountInfo(address: String) -> Promise<BinanceAccount> {
@@ -45,30 +45,36 @@ extension WalletCore {
 
             let key = WalletCore.wallet.getKeyForCoin(coin: .binance)
             let publicKey = key.getPublicKeySecp256k1(compressed: true)
-            var signingInput = TW_Binance_Proto_SigningInput()
-            signingInput.chainID = node.network
-            signingInput.accountNumber = account.account_number
-            signingInput.sequence = account.sequence
-            signingInput.privateKey = key.data
 
-            var token = TW_Binance_Proto_SendOrder.Token()
-            token.denom = "BNB"
-            token.amount = Int64(amount)
+            let token = BinanceSendOrder.Token.with {
+                $0.denom = "BNB" // BNB or BEP2 token symbol
+                $0.amount = Int64(amount)
+            }
 
-            var input = TW_Binance_Proto_SendOrder.Input()
-            input.address = AnyAddress(publicKey: publicKey, coin: .binance).data
-            input.coins = [token]
+            let orderInput = BinanceSendOrder.Input.with {
+                $0.address = AnyAddress(publicKey: publicKey, coin: .binance).data
+                $0.coins = [token]
+            }
 
-            var output = TW_Binance_Proto_SendOrder.Output()
-            output.address = toAddress.data
-            output.coins = [token]
+            let orderOutput = BinanceSendOrder.Output.with {
+                $0.address = toAddress.data
+                $0.coins = [token]
+            }
 
-            var sendOrder = TW_Binance_Proto_SendOrder()
-            sendOrder.inputs = [input]
-            sendOrder.outputs = [output]
+            let input = BinanceSigningInput.with {
+                $0.chainID = node.network
+                $0.accountNumber = account.account_number
+                $0.sequence = account.sequence
+                $0.source = 0 // BEP10 source id
+                $0.privateKey = key.data
+                $0.memo = ""
+                $0.sendOrder = BinanceSendOrder.with {
+                    $0.inputs = [orderInput]
+                    $0.outputs = [orderOutput]
+                }
+            }
 
-            signingInput.sendOrder = sendOrder
-            let data = BinanceSigner.sign(input: signingInput)
+            let data: BinanceSigningOutput = AnySigner.sign(input: input, coin: .binance)
 
             BNBProvider.request(.broadcast(data: data.encoded.hexdata)) { result in
                 switch result {

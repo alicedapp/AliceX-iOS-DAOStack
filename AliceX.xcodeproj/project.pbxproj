@@ -14,6 +14,9 @@
 		15015DAD2365B253008DDD80 /* AssetNFTHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15015DAB2365B253008DDD80 /* AssetNFTHeaderCell.xib */; };
 		1503623D23D3248500B9B0A9 /* TraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503623C23D3248500B9B0A9 /* TraitView.swift */; };
 		1503623F23D3249000B9B0A9 /* TraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1503623E23D3249000B9B0A9 /* TraitView.xib */; };
+		1505E044253BFB9A001ABD9B /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E043253BFB9A001ABD9B /* ChatRoomViewController.swift */; };
+		1505E04B253BFE22001ABD9B /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505E04A253BFE22001ABD9B /* UserManager.swift */; };
+		1505E051253C082F001ABD9B /* ChatRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1505E050253C082F001ABD9B /* ChatRoomViewController.xib */; };
 		1507252B233A0F46009C9D51 /* WCClientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507252A233A0F46009C9D51 /* WCClientHelper.swift */; };
 		1507252D233A113D009C9D51 /* WCServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507252C233A113D009C9D51 /* WCServerHandler.swift */; };
 		15072530233A2167009C9D51 /* WCConnectPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507252F233A2167009C9D51 /* WCConnectPopup.swift */; };
@@ -264,6 +267,7 @@
 		15A4F0FA232E85D2007A63A3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4F0F9232E85D2007A63A3 /* Transaction.swift */; };
 		15A7D500233B2896001D720F /* SingleButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7D4FF233B2896001D720F /* SingleButtonAlertView.swift */; };
 		15A7D502233B289F001D720F /* SingleButtonAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A7D501233B289F001D720F /* SingleButtonAlertView.xib */; };
+		15AC99542550561900FE146E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AC99532550561900FE146E /* JavaScriptCore.framework */; };
 		15AF403922E043550059FB18 /* TransactionManager+Gas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF403822E043550059FB18 /* TransactionManager+Gas.swift */; };
 		15AF403B22E04DF50059FB18 /* Coinmarketcap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF403A22E04DF50059FB18 /* Coinmarketcap.swift */; };
 		15AF403F22E05A5B0059FB18 /* CoinMarketCapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF403E22E05A5B0059FB18 /* CoinMarketCapModel.swift */; };
@@ -390,7 +394,7 @@
 		15FFCF882366073000E0BB80 /* CoinListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FFCF862366073000E0BB80 /* CoinListViewController.xib */; };
 		15FFCF8B236607E900E0BB80 /* CoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFCF89236607E900E0BB80 /* CoinListCell.swift */; };
 		15FFCF8C236607E900E0BB80 /* CoinListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FFCF8A236607E900E0BB80 /* CoinListCell.xib */; };
-		B0C602DE44CFDF2204379827 /* Pods_AliceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8362295B097EBCCD7FF04636 /* Pods_AliceX.framework */; };
+		1CB269B5EFB247EE0013B9EE /* Pods_AliceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A23E51D7DB8686E83350FDC /* Pods_AliceX.framework */; };
 		BD3A7A6F23027828006BEA0C /* exocet-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD3A7A6D23027828006BEA0C /* exocet-light.ttf */; };
 		BD3A7A7023027828006BEA0C /* exocet-heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD3A7A6E23027828006BEA0C /* exocet-heavy.ttf */; };
 /* End PBXBuildFile section */
@@ -420,7 +424,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01C9955E29AD06685142C243 /* Pods-AliceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliceX.debug.xcconfig"; path = "Target Support Files/Pods-AliceX/Pods-AliceX.debug.xcconfig"; sourceTree = "<group>"; };
 		15015DA123659DFF008DDD80 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		15015DA62365AD27008DDD80 /* AssetCoinHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCoinHeaderCell.swift; sourceTree = "<group>"; };
 		15015DA72365AD27008DDD80 /* AssetCoinHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetCoinHeaderCell.xib; sourceTree = "<group>"; };
@@ -428,6 +431,9 @@
 		15015DAB2365B253008DDD80 /* AssetNFTHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetNFTHeaderCell.xib; sourceTree = "<group>"; };
 		1503623C23D3248500B9B0A9 /* TraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitView.swift; sourceTree = "<group>"; };
 		1503623E23D3249000B9B0A9 /* TraitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraitView.xib; sourceTree = "<group>"; };
+		1505E043253BFB9A001ABD9B /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		1505E04A253BFE22001ABD9B /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		1505E050253C082F001ABD9B /* ChatRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomViewController.xib; sourceTree = "<group>"; };
 		1507252A233A0F46009C9D51 /* WCClientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCClientHelper.swift; sourceTree = "<group>"; };
 		1507252C233A113D009C9D51 /* WCServerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCServerHandler.swift; sourceTree = "<group>"; };
 		1507252F233A2167009C9D51 /* WCConnectPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCConnectPopup.swift; sourceTree = "<group>"; };
@@ -679,6 +685,7 @@
 		15A4F0F9232E85D2007A63A3 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		15A7D4FF233B2896001D720F /* SingleButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleButtonAlertView.swift; sourceTree = "<group>"; };
 		15A7D501233B289F001D720F /* SingleButtonAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleButtonAlertView.xib; sourceTree = "<group>"; };
+		15AC99532550561900FE146E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/PrivateFrameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		15AF403822E043550059FB18 /* TransactionManager+Gas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionManager+Gas.swift"; sourceTree = "<group>"; };
 		15AF403A22E04DF50059FB18 /* Coinmarketcap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coinmarketcap.swift; sourceTree = "<group>"; };
 		15AF403E22E05A5B0059FB18 /* CoinMarketCapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapModel.swift; sourceTree = "<group>"; };
@@ -811,8 +818,9 @@
 		15FFCF862366073000E0BB80 /* CoinListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinListViewController.xib; sourceTree = "<group>"; };
 		15FFCF89236607E900E0BB80 /* CoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCell.swift; sourceTree = "<group>"; };
 		15FFCF8A236607E900E0BB80 /* CoinListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinListCell.xib; sourceTree = "<group>"; };
-		76740DF06D13B75E44EBB99E /* Pods-AliceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliceX.release.xcconfig"; path = "Target Support Files/Pods-AliceX/Pods-AliceX.release.xcconfig"; sourceTree = "<group>"; };
-		8362295B097EBCCD7FF04636 /* Pods_AliceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AliceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		245C71E95E5A37364EDFBA1E /* Pods-AliceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliceX.debug.xcconfig"; path = "Target Support Files/Pods-AliceX/Pods-AliceX.debug.xcconfig"; sourceTree = "<group>"; };
+		4A23E51D7DB8686E83350FDC /* Pods_AliceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AliceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		768DE67FEC9793D5ABDC0E03 /* Pods-AliceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliceX.release.xcconfig"; path = "Target Support Files/Pods-AliceX/Pods-AliceX.release.xcconfig"; sourceTree = "<group>"; };
 		BD3A7A6D23027828006BEA0C /* exocet-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "exocet-light.ttf"; sourceTree = "<group>"; };
 		BD3A7A6E23027828006BEA0C /* exocet-heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "exocet-heavy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -822,7 +830,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C602DE44CFDF2204379827 /* Pods_AliceX.framework in Frameworks */,
+				15AC99542550561900FE146E /* JavaScriptCore.framework in Frameworks */,
+				1CB269B5EFB247EE0013B9EE /* Pods_AliceX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +872,38 @@
 				15E18F9123E6F211007C0263 /* TraitCell.xib */,
 			);
 			path = Trait;
+			sourceTree = "<group>";
+		};
+		1505E040253BFB47001ABD9B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1505E041253BFB47001ABD9B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				1505E042253BFB87001ABD9B /* UI */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		1505E042253BFB87001ABD9B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1505E043253BFB9A001ABD9B /* ChatRoomViewController.swift */,
+				1505E050253C082F001ABD9B /* ChatRoomViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1505E049253BFE16001ABD9B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				1505E04A253BFE22001ABD9B /* UserManager.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		15072529233A0EB6009C9D51 /* Util */ = {
@@ -1052,13 +1093,6 @@
 			path = Popup;
 			sourceTree = "<group>";
 		};
-		1528139223BF096800EE847D /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		1528139823C1B0CD00EE847D /* SwitchAccount */ = {
 			isa = PBXGroup;
 			children = (
@@ -1084,29 +1118,6 @@
 				1578EE2123C5A75000ED69CB /* MnemonicTableViewCell.xib */,
 			);
 			path = cell;
-			sourceTree = "<group>";
-		};
-		152E483723FA649E00C79A03 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				152E483923FA74FA00C79A03 /* UI */,
-				152E483823FA74EE00C79A03 /* Manager */,
-			);
-			path = Chat;
-			sourceTree = "<group>";
-		};
-		152E483823FA74EE00C79A03 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		152E483923FA74FA00C79A03 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		15300E61233E373F004E9144 /* Custom */ = {
@@ -1973,9 +1984,10 @@
 		15B86BB422AA1DAF00110C06 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				152E483723FA649E00C79A03 /* Chat */,
+				1505E049253BFE16001ABD9B /* User */,
+				1505E041253BFB47001ABD9B /* Chat */,
+				1505E040253BFB47001ABD9B /* Profile */,
 				15E802FD23D1BF2C00CBE7FB /* NFT */,
-				1528139223BF096800EE847D /* Profile */,
 				1533C999237ABAFB0052010A /* MiniApp */,
 				15E1AA9523670EE400F29369 /* Account */,
 				1514464A236437DE005E87CE /* MainTab */,
@@ -2415,8 +2427,8 @@
 		876CA3F15BC9D26DB41AD374 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				01C9955E29AD06685142C243 /* Pods-AliceX.debug.xcconfig */,
-				76740DF06D13B75E44EBB99E /* Pods-AliceX.release.xcconfig */,
+				245C71E95E5A37364EDFBA1E /* Pods-AliceX.debug.xcconfig */,
+				768DE67FEC9793D5ABDC0E03 /* Pods-AliceX.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2431,9 +2443,10 @@
 		DA2C65F6CDB90D221AABF906 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15AC99532550561900FE146E /* JavaScriptCore.framework */,
 				15E5152D24082614008A717B /* UserNotifications.framework */,
 				15E5152F24082614008A717B /* UserNotificationsUI.framework */,
-				8362295B097EBCCD7FF04636 /* Pods_AliceX.framework */,
+				4A23E51D7DB8686E83350FDC /* Pods_AliceX.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2462,7 +2475,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15B86B6722AA044000110C06 /* Build configuration list for PBXNativeTarget "AliceX" */;
 			buildPhases = (
-				EF6E04F7138E2EA4A8E96E93 /* [CP] Check Pods Manifest.lock */,
+				D2D71ED81EAE2A4F30EB819C /* [CP] Check Pods Manifest.lock */,
 				15B86BA422AA09D200110C06 /* Headers */,
 				15B86B5122AA043F00110C06 /* Sources */,
 				15B86B5222AA043F00110C06 /* Frameworks */,
@@ -2473,7 +2486,7 @@
 				1587395F22B9F9FB00F36F92 /* Swift Lint */,
 				1577DDD5238093FD00225DE6 /* Fabric - Firebase */,
 				15E5153E24082614008A717B /* Embed App Extensions */,
-				58BDE0FB43F3EA26DC269424 /* [CP] Embed Pods Frameworks */,
+				3C6CC7081383B6787AC3D40E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2600,6 +2613,7 @@
 				15F197C523830CFB00960DE1 /* CameraContainerViewController.xib in Resources */,
 				BD3A7A7023027828006BEA0C /* exocet-heavy.ttf in Resources */,
 				1533C9942379B0330052010A /* erc20.json in Resources */,
+				1505E051253C082F001ABD9B /* ChatRoomViewController.xib in Resources */,
 				157AA67F22CCAA6E008AF3A5 /* MnemonicsView.xib in Resources */,
 				15DE8E3C22C9DD45004B45A2 /* ImportWalletViewController.xib in Resources */,
 				157E350F240EA3A600C23AD7 /* AppToBrowserCell.xib in Resources */,
@@ -2745,7 +2759,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		58BDE0FB43F3EA26DC269424 /* [CP] Embed Pods Frameworks */ = {
+		3C6CC7081383B6787AC3D40E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2780,7 +2794,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Launch React Native Packager\nif nc -w 5 -z localhost 8081 ; then\nif ! curl -s \"http://localhost:8081/status\" | grep -q \"packager-status:running\" ; then\necho \"Port 8081 already in use, packager is either not running or not running correctly\"\nexit 2\nfi\nelse\nopen -a Terminal $SRCROOT/../node_modules/react-native/scripts/launchPackager.command || echo \"Can't start packager automatically\"\nfi\n";
 		};
-		EF6E04F7138E2EA4A8E96E93 /* [CP] Check Pods Manifest.lock */ = {
+		D2D71ED81EAE2A4F30EB819C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3006,6 +3020,7 @@
 				1525E79323311C18009DAB83 /* AmberData.swift in Sources */,
 				15BC4DB422DA495000313CA9 /* BaseView.swift in Sources */,
 				153B280A231B7EBF0062B2E8 /* FloatPinView.swift in Sources */,
+				1505E044253BFB9A001ABD9B /* ChatRoomViewController.swift in Sources */,
 				15D34525236C76E20085EFFC /* WatchingCoinHelper.swift in Sources */,
 				157E350E240EA3A600C23AD7 /* AppToBrowserCell.swift in Sources */,
 				15477B3D22E15B4C008E3230 /* Moya+Util.swift in Sources */,
@@ -3046,6 +3061,7 @@
 				152151E622ECB76200A4613A /* LBXScanView.swift in Sources */,
 				15A4F0F7232D1016007A63A3 /* AboutViewController.swift in Sources */,
 				154F60A523846D1E0011200F /* FaviconGrabberModel.swift in Sources */,
+				1505E04B253BFE22001ABD9B /* UserManager.swift in Sources */,
 				15E7568A23C1CC5100F57003 /* AddAccountFooter.swift in Sources */,
 				158124DE23EBE29E0021B62E /* AssetPriceVC+Chart.swift in Sources */,
 				15358822236A0D6B00BB4ED2 /* AssetLoadingAnimator.swift in Sources */,
@@ -3229,7 +3245,7 @@
 		};
 		15B86B6822AA044000110C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01C9955E29AD06685142C243 /* Pods-AliceX.debug.xcconfig */;
+			baseConfigurationReference = 245C71E95E5A37364EDFBA1E /* Pods-AliceX.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3252,183 +3268,23 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				MARKETING_VERSION = 1.0.2;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-fprofile-instr-generate",
-					"-l\"ObjC\"",
-					"-l\"c++\"",
-					"-l\"iconv\"",
-					"-l\"sqlite3\"",
-					"-l\"stdc++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"Alamofire\"",
-					"-framework",
-					"\"Base64\"",
-					"-framework",
-					"\"BigInt\"",
-					"-framework",
-					"\"BonMot\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CodePush\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreImage\"",
-					"-framework",
-					"\"Crashlytics\"",
-					"-framework",
-					"\"CryptoSwift\"",
-					"-framework",
-					"\"DVAssetLoaderDelegate\"",
-					"-framework",
-					"\"DoubleConversion\"",
-					"-framework",
-					"\"ESPullToRefresh\"",
-					"-framework",
-					"\"FIRAnalyticsConnector\"",
-					"-framework",
-					"\"Fabric\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseInstanceID\"",
-					"-framework",
-					"\"FirebaseMessaging\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleDataTransport\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"HandyJSON\"",
-					"-framework",
-					"\"Haneke\"",
-					"-framework",
-					"\"Hero\"",
-					"-framework",
-					"\"IQKeyboardManagerSwift\"",
-					"-framework",
-					"\"JWT\"",
-					"-framework",
-					"\"JXSegmentedView\"",
-					"-framework",
-					"\"JavaScriptCore\"",
-					"-framework",
-					"\"KeychainAccess\"",
-					"-framework",
-					"\"Kingfisher\"",
-					"-framework",
-					"\"MarqueeLabel\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"Moya\"",
-					"-framework",
-					"\"Pageboy\"",
-					"-framework",
-					"\"PromiseKit\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"QuickLayout\"",
-					"-framework",
-					"\"RNFirebase\"",
-					"-framework",
-					"\"RNGestureHandler\"",
-					"-framework",
-					"\"RNReactNativeHapticFeedback\"",
-					"-framework",
-					"\"RNSVG\"",
-					"-framework",
-					"\"React\"",
-					"-framework",
-					"\"Result\"",
-					"-framework",
-					"\"SPLarkController\"",
-					"-framework",
-					"\"SPStorkController\"",
-					"-framework",
-					"\"SPTPersistentCache\"",
-					"-framework",
-					"\"SSZipArchive\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"Starscream\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SwiftEntryKit\"",
-					"-framework",
-					"\"SwiftProtobuf\"",
-					"-framework",
-					"\"SwiftyUserDefaults\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"TrustWalletCore\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"UserNotifications\"",
-					"-framework",
-					"\"VBFPopFlatButton\"",
-					"-framework",
-					"\"ViewAnimator\"",
-					"-framework",
-					"\"WalletConnectSwift\"",
-					"-framework",
-					"\"folly\"",
-					"-framework",
-					"\"glog\"",
-					"-framework",
-					"\"nanopb\"",
-					"-framework",
-					"\"pop\"",
-					"-framework",
-					"\"protobuf\"",
-					"-framework",
-					"\"react_native_camera\"",
-					"-framework",
-					"\"react_native_video\"",
-					"-framework",
-					"\"secp256k1\"",
-					"-framework",
-					"\"web3swift\"",
-					"-framework",
-					"\"yoga\"",
-					"-weak_framework",
-					"\"UserNotifications\"",
-					"-weak_framework",
-					"\"Combine\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alice.dapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AliceX/ReactNative/AliceX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		15B86B6922AA044000110C06 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76740DF06D13B75E44EBB99E /* Pods-AliceX.release.xcconfig */;
+			baseConfigurationReference = 768DE67FEC9793D5ABDC0E03 /* Pods-AliceX.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3452,177 +3308,17 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				MARKETING_VERSION = 1.0.2;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-fprofile-instr-generate",
-					"-l\"ObjC\"",
-					"-l\"c++\"",
-					"-l\"iconv\"",
-					"-l\"sqlite3\"",
-					"-l\"stdc++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"Alamofire\"",
-					"-framework",
-					"\"Base64\"",
-					"-framework",
-					"\"BigInt\"",
-					"-framework",
-					"\"BonMot\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CodePush\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreImage\"",
-					"-framework",
-					"\"Crashlytics\"",
-					"-framework",
-					"\"CryptoSwift\"",
-					"-framework",
-					"\"DVAssetLoaderDelegate\"",
-					"-framework",
-					"\"DoubleConversion\"",
-					"-framework",
-					"\"ESPullToRefresh\"",
-					"-framework",
-					"\"FIRAnalyticsConnector\"",
-					"-framework",
-					"\"Fabric\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseInstanceID\"",
-					"-framework",
-					"\"FirebaseMessaging\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"GoogleAppMeasurement\"",
-					"-framework",
-					"\"GoogleDataTransport\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"HandyJSON\"",
-					"-framework",
-					"\"Haneke\"",
-					"-framework",
-					"\"Hero\"",
-					"-framework",
-					"\"IQKeyboardManagerSwift\"",
-					"-framework",
-					"\"JWT\"",
-					"-framework",
-					"\"JXSegmentedView\"",
-					"-framework",
-					"\"JavaScriptCore\"",
-					"-framework",
-					"\"KeychainAccess\"",
-					"-framework",
-					"\"Kingfisher\"",
-					"-framework",
-					"\"MarqueeLabel\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"Moya\"",
-					"-framework",
-					"\"Pageboy\"",
-					"-framework",
-					"\"PromiseKit\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"QuickLayout\"",
-					"-framework",
-					"\"RNFirebase\"",
-					"-framework",
-					"\"RNGestureHandler\"",
-					"-framework",
-					"\"RNReactNativeHapticFeedback\"",
-					"-framework",
-					"\"RNSVG\"",
-					"-framework",
-					"\"React\"",
-					"-framework",
-					"\"Result\"",
-					"-framework",
-					"\"SPLarkController\"",
-					"-framework",
-					"\"SPStorkController\"",
-					"-framework",
-					"\"SPTPersistentCache\"",
-					"-framework",
-					"\"SSZipArchive\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"Starscream\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SwiftEntryKit\"",
-					"-framework",
-					"\"SwiftProtobuf\"",
-					"-framework",
-					"\"SwiftyUserDefaults\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"TrustWalletCore\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"UserNotifications\"",
-					"-framework",
-					"\"VBFPopFlatButton\"",
-					"-framework",
-					"\"ViewAnimator\"",
-					"-framework",
-					"\"WalletConnectSwift\"",
-					"-framework",
-					"\"folly\"",
-					"-framework",
-					"\"glog\"",
-					"-framework",
-					"\"nanopb\"",
-					"-framework",
-					"\"pop\"",
-					"-framework",
-					"\"protobuf\"",
-					"-framework",
-					"\"react_native_camera\"",
-					"-framework",
-					"\"react_native_video\"",
-					"-framework",
-					"\"secp256k1\"",
-					"-framework",
-					"\"web3swift\"",
-					"-framework",
-					"\"yoga\"",
-					"-weak_framework",
-					"\"UserNotifications\"",
-					"-weak_framework",
-					"\"Combine\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alice.dapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "AliceX/ReactNative/AliceX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -29,8 +29,8 @@ class AssetViewController: BaseViewController {
 
     var balance: Double?
 
-    let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
-    let coinAnimations = [AnimationType.from(direction: .right, offset: 100.0)]
+    let animations = [AnimationType.vector(CGVector(dx: 0, dy: 30))]
+    let coinAnimations = [AnimationType.vector(CGVector(dx: 0, dy: 100))]
 
     override func viewDidLoad() {
         super.viewDidLoad()

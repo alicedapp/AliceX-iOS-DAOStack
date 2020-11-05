@@ -2,13 +2,15 @@ platform :ios, '11.0'
 inhibit_all_warnings!
 source 'https://github.com/CocoaPods/Specs.git'
 
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../node_modules/react-native/scripts/react_native_pods'
 
 # -------------------------------------------------- #
 def vendor
   #  pod 'web3.swift.pod', '~> 2.2.1'
 
     # Fix release build problem
-    pod 'Web3swift.pod', git: 'https://github.com/matter-labs/web3swift', branch: 'master'
+    pod 'web3swift', git: 'https://github.com/alicedapp/web3swift', branch: 'master'
     
     pod 'KeychainAccess'
     pod 'SPStorkController', git: 'https://github.com/lmcmz/SPStorkController', branch: 'master'
@@ -28,10 +30,6 @@ def vendor
     pod 'TrustWalletCore'
     pod 'VBFPopFlatButton'
     pod "ViewAnimator"
-  #  pod 'SVGKit'
-  #  pod 'RxSwift', '~> 5'
-  #  pod 'RxCocoa', '~> 5'
-  #  pod 'lottie-ios'
     pod "ESPullToRefresh"
     pod 'JXSegmentedView', git: 'https://github.com/pujiaxin33/JXSegmentedView', branch: 'master'
     pod 'FoldingCell'
@@ -40,16 +38,17 @@ def vendor
     pod 'Instructions', '~> 1.4.0'
     pod "SkeletonView"
     pod 'SwiftDate', '~> 5.0'
-    pod 'MessageKit'
-end
+#    pod 'MessageKit'
 
+    pod 'Base64', '~> 1.1'
+end
 
 # -------------------------------------------------- #
-def chat
-  pod 'Chatto', '= 3.5.0'
-  pod 'ChattoAdditions', '= 3.5.0'
-  pod 'SwiftMatrixSDK'
-end
+#def chat
+#  pod 'Chatto', '= 3.5.0'
+#  pod 'ChattoAdditions', '= 3.5.0'
+#  pod 'SwiftMatrixSDK'
+#end
 
 
 # -------------------------------------------------- #
@@ -70,41 +69,44 @@ end
 # -------------------------------------------------- #
 def rn
   # React Native Dependencies
-    pod 'React', :path => '../node_modules/react-native', :subspecs => [
-    'Core',
-    'CxxBridge',
-    'DevSupport',
-    'RCTText',
-#    'RCTGeolocation',
-    'RCTAnimation',
-    'RCTImage',
-    'RCTActionSheet',
-    'RCTNetwork',
-    'RCTWebSocket',
-    'RCTLinkingIOS'
-    ]
-
-    pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-    pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
-    pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
-    pod 'react-native-camera', path: '../node_modules/react-native-camera'
-    pod 'RNSVG', :path => '../node_modules/react-native-svg'
-    pod 'RNReactNativeHapticFeedback', :path => '../node_modules/react-native-haptic-feedback'
-    pod 'CodePush', :path => '../node_modules/react-native-code-push'
-    pod 'react-native-video/VideoCaching', :path => '../node_modules/react-native-video/react-native-video.podspec'
-    pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
-    pod 'ReactNativeExceptionHandler', :podspec => '../node_modules/react-native-exception-handler/ReactNativeExceptionHandler.podspec'
-    pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
-    pod 'RNScreens', :path => '../node_modules/react-native-screens'
-
-  #  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
-  #  pod 'RNFBMessaging', :path => '../node_modules/@react-native-firebase/messaging'
+  pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
+   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
+   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
+   pod 'RCTTypeSafety', :path => "../node_modules/react-native/Libraries/TypeSafety"
+   pod 'React', :path => '../node_modules/react-native/'
+   pod 'React-Core', :path => '../node_modules/react-native/'
+   pod 'React-CoreModules', :path => '../node_modules/react-native/React/CoreModules'
+   pod 'React-Core/DevSupport', :path => '../node_modules/react-native/'
+   pod 'React-RCTActionSheet', :path => '../node_modules/react-native/Libraries/ActionSheetIOS'
+   pod 'React-RCTAnimation', :path => '../node_modules/react-native/Libraries/NativeAnimation'
+   pod 'React-RCTBlob', :path => '../node_modules/react-native/Libraries/Blob'
+   pod 'React-RCTImage', :path => '../node_modules/react-native/Libraries/Image'
+   pod 'React-RCTLinking', :path => '../node_modules/react-native/Libraries/LinkingIOS'
+   pod 'React-RCTNetwork', :path => '../node_modules/react-native/Libraries/Network'
+   pod 'React-RCTSettings', :path => '../node_modules/react-native/Libraries/Settings'
+   pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text'
+   pod 'React-RCTVibration', :path => '../node_modules/react-native/Libraries/Vibration'
+   pod 'React-Core/RCTWebSocket', :path => '../node_modules/react-native/'
+   pod 'React-cxxreact', :path => '../node_modules/react-native/ReactCommon/cxxreact'
+   pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'
+   pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
+   pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
+   pod 'React-callinvoker', :path => "../node_modules/react-native/ReactCommon/callinvoker"
+   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
+   pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+   
+#   pod 'CodePush', :path => '../node_modules/react-native-code-push'
 end
 
+$RNFirebaseAsStaticFramework = true
 
 # -------------------------------------------------- #
 target 'AliceX' do
-  use_frameworks!
+ use_frameworks!
+#  use_native_modules!
   
   vendor
 #  chat
@@ -113,22 +115,35 @@ target 'AliceX' do
 
 end
 
-post_install do |installer|
-  
-  rnfirebase = installer.pods_project.targets.find { |target| target.name == 'RNFirebase' }
-  rnfirebase.build_configurations.each do |config|
-    config.build_settings['HEADER_SEARCH_PATHS'] = '$(inherited) ${PODS_ROOT}/Headers/Public/**'
-  end
-  
-  installer.pods_project.build_configurations.each do |config|
-    config.build_settings.delete('CODE_SIGNING_ALLOWED')
-    config.build_settings.delete('CODE_SIGNING_REQUIRED')
-  end
-  
-  installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-          config.build_settings['ENABLE_BITCODE'] = 'YES'
-          config.build_settings['SWIFT_VERSION'] = '5.0'
-      end
+pre_install do |installer|
+  def installer.verify_no_static_framework_transitive_dependencies; end
+end
+
+
+post_install do |pi|
+  pi.pods_project.targets.each do |t|
+    t.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+    end
   end
 end
+
+#post_install do |installer|
+#
+#  rnfirebase = installer.pods_project.targets.find { |target| target.name == 'RNFirebase' }
+#  rnfirebase.build_configurations.each do |config|
+#    config.build_settings['HEADER_SEARCH_PATHS'] = '$(inherited) ${PODS_ROOT}/Headers/Public/**'
+#  end
+#
+#  installer.pods_project.build_configurations.each do |config|
+#    config.build_settings.delete('CODE_SIGNING_ALLOWED')
+#    config.build_settings.delete('CODE_SIGNING_REQUIRED')
+#  end
+#
+#  installer.pods_project.targets.each do |target|
+#      target.build_configurations.each do |config|
+#          config.build_settings['ENABLE_BITCODE'] = 'YES'
+#          config.build_settings['SWIFT_VERSION'] = '5.0'
+#      end
+#  end
+#end

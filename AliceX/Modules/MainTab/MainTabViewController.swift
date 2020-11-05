@@ -12,10 +12,11 @@ import UIKit
 
 class MainTabViewController: PageboyViewController {
     @IBOutlet var tabcontainer: UIStackView!
+    @IBOutlet var tab0Conatiner: UIView!
     @IBOutlet var tab1Conatiner: UIView!
     @IBOutlet var tab2Conatiner: UIView!
     @IBOutlet var tab3Conatiner: UIView!
-
+    @IBOutlet var tab0Icon: UIImageView!
     @IBOutlet var tab1Icon: UIImageView!
     @IBOutlet var tab2Icon: UIImageView!
     @IBOutlet var tab3Icon: UIImageView!
@@ -28,6 +29,7 @@ class MainTabViewController: PageboyViewController {
 
     var vcs: [UIViewController] = []
     let minVC = MiniAppViewController()
+    let chatVC = ChatRoomViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +39,7 @@ class MainTabViewController: PageboyViewController {
         view.isHeroEnabled = true
 
         minVC.tabRef = tabcontainer
-        vcs = [minVC, AssetViewController(), SettingViewController.make(hideBackButton: true)]
+        vcs = [chatVC, minVC, AssetViewController(), SettingViewController.make(hideBackButton: true)]
 
         vcs.forEach { vc in
             vc.hero.isEnabled = true
@@ -51,7 +53,7 @@ class MainTabViewController: PageboyViewController {
         view.backgroundColor = .clear
 //        Defaults[\.isFirstTimeOpen] = false
 
-        for tag in 1 ... 3 {
+        for tag in 1 ... 4 {
             guard let tagView = view.viewWithTag(tag) else {
                 continue
             }
@@ -68,6 +70,8 @@ class MainTabViewController: PageboyViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(mnemonicBackuped), name: .mnemonicBackuped, object: nil)
 
         registerNotification()
+
+        UserManager.shared.signInAnonymously()
     }
 
     deinit {
@@ -114,35 +118,49 @@ extension MainTabViewController: PageboyViewControllerDelegate {
     func pageboyViewController(_: PageboyViewController,
                                willScrollToPageAt _: PageboyViewController.PageIndex,
                                direction _: PageboyViewController.NavigationDirection,
-                               animated _: Bool) {
-    }
+                               animated _: Bool) {}
 
     func pageboyViewController(_: PageboyViewController,
                                didCancelScrollToPageAt _: PageboyViewController.PageIndex,
-                               returnToPageAt _: PageboyViewController.PageIndex) {
-    }
+                               returnToPageAt _: PageboyViewController.PageIndex) {}
 
     func pageboyViewController(_: PageboyViewController,
                                didScrollTo position: CGPoint,
                                direction _: PageboyViewController.NavigationDirection,
                                animated _: Bool) {
         let x = position.x
-        if x >= 0, x <= 1.0 {
-            let alpha = x
-            tab1Icon.alpha = alpha
-            tab2Icon.alpha = 1 - alpha
-
+        let floor = x.rounded(.down)
+        let alpha = x - floor
+        switch Int(floor) {
+        case 0:
+            tab0Icon.alpha = alpha
+            tab1Icon.alpha = 1 - alpha
             if minVC.isTriggle {
                 tabcontainer.alpha = x
                 return
             }
-        }
-
-        if x >= 1, x <= 2.0 {
-            let alpha = x - 1
+        case 1:
+            tab1Icon.alpha = alpha
+            tab2Icon.alpha = 1 - alpha
+        case 2:
             tab2Icon.alpha = alpha
             tab3Icon.alpha = 1 - alpha
+        default:
+            break
         }
+
+//        if x >= 0, x <= 1.0 {
+//            let alpha = x
+//            tab1Icon.alpha = alpha
+//            tab2Icon.alpha = 1 - alpha
+//
+//        }
+//
+//        if x >= 1, x <= 2.0 {
+//            let alpha = x - 1
+//            tab2Icon.alpha = alpha
+//            tab3Icon.alpha = 1 - alpha
+//        }
     }
 
     func pageboyViewController(_: PageboyViewController,

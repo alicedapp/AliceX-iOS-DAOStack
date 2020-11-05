@@ -8,7 +8,7 @@
 
 import Foundation
 import PromiseKit
-import TrustWalletCore
+import WalletCore
 import web3swift
 
 enum Coin {

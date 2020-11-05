@@ -110,7 +110,7 @@ extension MiniAppViewController {
             return index1.item < index2.item
         }
 
-        let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
+        let animations = [AnimationType.vector(CGVector(dx: 0, dy: 30))]
         cellAnimation(cells: orderCell, animator: animations)
     }
 

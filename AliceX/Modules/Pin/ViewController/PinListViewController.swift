@@ -12,7 +12,7 @@ import ViewAnimator
 class PinListViewController: BaseViewController {
     @IBOutlet var blurMask: UIVisualEffectView!
 
-    let cellAnimations = [AnimationType.from(direction: .right, offset: 100.0)]
+    let cellAnimations = [AnimationType.vector(CGVector(dx: 0, dy: 100))]
 
     var pinList: [PinItem] = PinManager.shared.pinList {
         didSet {

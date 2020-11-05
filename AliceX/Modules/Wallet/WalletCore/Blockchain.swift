@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import TrustWalletCore
+import WalletCore
 import web3swift
 
 enum BlockChain: String, CaseIterable {

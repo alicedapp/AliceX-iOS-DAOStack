@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatRoomViewController" customModule="AliceX" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="CRA-yY-cxZ" id="wbC-az-Cog"/>
+                <outlet property="view" destination="s8M-DR-zO9" id="fOV-QX-PUf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="s8M-DR-zO9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4t7-5c-FcF">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQi-kZ-1mf">
+                            <rect key="frame" x="185.5" y="18.5" width="43" height="23"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                            <color key="textColor" name="Alice-DarkGrey"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AliceText"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5i-w1-RGZ" customClass="UIControl">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="59.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close-dark" translatesAutoresizingMaskIntoConstraints="NO" id="r7A-cf-L8r">
+                                    <rect key="frame" x="21.5" y="21.5" width="17" height="17"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" name="Alice-White"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="2yo-Ya-JxB"/>
+                                <constraint firstItem="r7A-cf-L8r" firstAttribute="centerY" secondItem="x5i-w1-RGZ" secondAttribute="centerY" id="oUU-y2-z3v"/>
+                                <constraint firstItem="r7A-cf-L8r" firstAttribute="centerX" secondItem="x5i-w1-RGZ" secondAttribute="centerX" id="v9g-bW-HB7"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="backArrow"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFe-WS-WVQ">
+                            <rect key="frame" x="0.0" y="59.5" width="414" height="0.5"/>
+                            <color key="backgroundColor" name="Alice-LightGrey"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="NGS-gQ-ZRR"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="navLine"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="Alice-White"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HFe-WS-WVQ" secondAttribute="bottom" id="8go-Ce-lCx"/>
+                        <constraint firstItem="x5i-w1-RGZ" firstAttribute="top" secondItem="4t7-5c-FcF" secondAttribute="top" id="96A-qL-PcN"/>
+                        <constraint firstItem="aQi-kZ-1mf" firstAttribute="centerX" secondItem="4t7-5c-FcF" secondAttribute="centerX" id="Co3-oS-Tky"/>
+                        <constraint firstItem="HFe-WS-WVQ" firstAttribute="leading" secondItem="4t7-5c-FcF" secondAttribute="leading" id="Dse-Ye-ddf"/>
+                        <constraint firstAttribute="trailing" secondItem="HFe-WS-WVQ" secondAttribute="trailing" id="SV8-7Q-KNY"/>
+                        <constraint firstAttribute="height" constant="60" id="ePI-m1-Ldq"/>
+                        <constraint firstItem="x5i-w1-RGZ" firstAttribute="leading" secondItem="4t7-5c-FcF" secondAttribute="leading" id="fYv-8G-pZB"/>
+                        <constraint firstAttribute="bottom" secondItem="x5i-w1-RGZ" secondAttribute="bottom" constant="0.5" id="g7J-E6-SQa"/>
+                        <constraint firstItem="aQi-kZ-1mf" firstAttribute="centerY" secondItem="4t7-5c-FcF" secondAttribute="centerY" id="n4u-TH-lkj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AliceNaviBar"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CRA-yY-cxZ">
+                    <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="L9j-Po-0f4"/>
+            <color key="backgroundColor" name="Alice-White"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4t7-5c-FcF" secondAttribute="trailing" id="3sb-bE-6B6"/>
+                <constraint firstItem="L9j-Po-0f4" firstAttribute="trailing" secondItem="CRA-yY-cxZ" secondAttribute="trailing" id="9cj-Pg-51u"/>
+                <constraint firstItem="4t7-5c-FcF" firstAttribute="top" secondItem="L9j-Po-0f4" secondAttribute="top" id="Cbr-4h-epC"/>
+                <constraint firstItem="4t7-5c-FcF" firstAttribute="leading" secondItem="L9j-Po-0f4" secondAttribute="leading" id="OwA-S3-To9"/>
+                <constraint firstAttribute="bottom" secondItem="CRA-yY-cxZ" secondAttribute="bottom" id="bS8-B7-mmU"/>
+                <constraint firstItem="CRA-yY-cxZ" firstAttribute="top" secondItem="4t7-5c-FcF" secondAttribute="bottom" id="neo-le-39e"/>
+                <constraint firstItem="CRA-yY-cxZ" firstAttribute="leading" secondItem="L9j-Po-0f4" secondAttribute="leading" id="rZd-Ak-1wi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-dark" width="17" height="17"/>
+        <namedColor name="Alice-DarkGrey">
+            <color red="0.33700001239776611" green="0.33700001239776611" blue="0.33700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Alice-LightGrey">
+            <color red="0.85900002717971802" green="0.875" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Alice-White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

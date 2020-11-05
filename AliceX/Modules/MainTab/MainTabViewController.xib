@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainTabViewController" customModule="AliceX" customModuleProvider="target">
             <connections>
                 <outlet property="badge" destination="6pw-gU-Nnm" id="uUs-Bf-mN3"/>
+                <outlet property="tab0Conatiner" destination="gn2-Wy-11m" id="fYg-eI-ph6"/>
+                <outlet property="tab0Icon" destination="K9n-S7-Ehc" id="LGO-oA-XF6"/>
                 <outlet property="tab1Conatiner" destination="MAW-6B-Erd" id="17a-WK-fhz"/>
                 <outlet property="tab1Icon" destination="uAP-jY-5c7" id="ond-mx-RKz"/>
                 <outlet property="tab2Conatiner" destination="T4h-vm-ra7" id="8ti-mG-dd6"/>
@@ -29,14 +31,58 @@
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uv1-Jk-TUe">
                     <rect key="frame" x="0.0" y="797" width="414" height="60"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1B-w5-8cu">
-                            <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2O0-F1-eMd">
+                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="60"/>
                             <subviews>
-                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAW-6B-Erd" customClass="UIControl">
-                                    <rect key="frame" x="46.5" y="7.5" width="45" height="45"/>
+                                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gn2-Wy-11m" customClass="UIControl">
+                                    <rect key="frame" x="29.5" y="7.5" width="45" height="45"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat-tab-selected" translatesAutoresizingMaskIntoConstraints="NO" id="crg-3U-nql">
+                                            <rect key="frame" x="0.0" y="0.5" width="44.5" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="crg-3U-nql" secondAttribute="height" multiplier="1:1" id="c50-nu-dYM"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat-tab" translatesAutoresizingMaskIntoConstraints="NO" id="K9n-S7-Ehc">
+                                            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="ZcV-xt-lqf"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Fbi-db-qzG"/>
+                                        <constraint firstItem="crg-3U-nql" firstAttribute="width" secondItem="K9n-S7-Ehc" secondAttribute="width" multiplier="0.98" id="Ff4-eD-TMp"/>
+                                        <constraint firstItem="crg-3U-nql" firstAttribute="centerY" secondItem="gn2-Wy-11m" secondAttribute="centerY" id="SuK-RL-gUr"/>
+                                        <constraint firstItem="K9n-S7-Ehc" firstAttribute="width" secondItem="K9n-S7-Ehc" secondAttribute="height" multiplier="1:1" id="baV-EO-9Yi"/>
+                                        <constraint firstItem="K9n-S7-Ehc" firstAttribute="centerY" secondItem="gn2-Wy-11m" secondAttribute="centerY" id="cIt-Kf-YWu"/>
+                                        <constraint firstItem="crg-3U-nql" firstAttribute="centerX" secondItem="gn2-Wy-11m" secondAttribute="centerX" id="cLZ-8G-I4b"/>
+                                        <constraint firstAttribute="width" secondItem="gn2-Wy-11m" secondAttribute="height" multiplier="1:1" id="neV-wU-jYg"/>
+                                        <constraint firstItem="K9n-S7-Ehc" firstAttribute="centerX" secondItem="gn2-Wy-11m" secondAttribute="centerX" id="tmB-u5-MUu"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="UIControl"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tabClickWithButton:" destination="-1" eventType="touchUpInside" id="EY8-Cc-nxB"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="gn2-Wy-11m" firstAttribute="centerY" secondItem="2O0-F1-eMd" secondAttribute="centerY" id="IIk-pF-apf"/>
+                                <constraint firstItem="gn2-Wy-11m" firstAttribute="centerX" secondItem="2O0-F1-eMd" secondAttribute="centerX" id="vGy-8V-Os9"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1B-w5-8cu">
+                            <rect key="frame" x="103.5" y="0.0" width="103.5" height="60"/>
+                            <subviews>
+                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAW-6B-Erd" customClass="UIControl">
+                                    <rect key="frame" x="29.5" y="7.5" width="45" height="45"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniapp-tab-selected" translatesAutoresizingMaskIntoConstraints="NO" id="a6v-jw-QlU">
-                                            <rect key="frame" x="0.5" y="0.5" width="44" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.5" width="44.5" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="a6v-jw-QlU" secondAttribute="height" multiplier="1:1" id="vS3-3v-liw"/>
                                             </constraints>
@@ -74,13 +120,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyJ-5q-lgj">
-                            <rect key="frame" x="138" y="0.0" width="138" height="60"/>
+                            <rect key="frame" x="207" y="0.0" width="103.5" height="60"/>
                             <subviews>
-                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4h-vm-ra7" customClass="UIControl">
-                                    <rect key="frame" x="46.5" y="7.5" width="45" height="45"/>
+                                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4h-vm-ra7" customClass="UIControl">
+                                    <rect key="frame" x="29.5" y="7.5" width="45" height="45"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asset-tab-selected" translatesAutoresizingMaskIntoConstraints="NO" id="UgZ-P2-r76">
-                                            <rect key="frame" x="0.5" y="0.5" width="44" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.5" width="44.5" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="UgZ-P2-r76" secondAttribute="height" multiplier="1:1" id="cm8-mN-xXG"/>
                                             </constraints>
@@ -118,13 +164,13 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfi-4x-N32">
-                            <rect key="frame" x="276" y="0.0" width="138" height="60"/>
+                            <rect key="frame" x="310.5" y="0.0" width="103.5" height="60"/>
                             <subviews>
-                                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGb-yk-G8t" customClass="UIControl">
-                                    <rect key="frame" x="46.5" y="7.5" width="45" height="45"/>
+                                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGb-yk-G8t" customClass="UIControl">
+                                    <rect key="frame" x="29.5" y="7.5" width="45" height="45"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting-tab-selected" translatesAutoresizingMaskIntoConstraints="NO" id="Zs1-QT-3uc">
-                                            <rect key="frame" x="0.5" y="0.5" width="44" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.5" width="44.5" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Zs1-QT-3uc" secondAttribute="height" multiplier="1:1" id="0Y4-af-Gh3"/>
                                                 <constraint firstAttribute="width" secondItem="Zs1-QT-3uc" secondAttribute="height" multiplier="1:1" id="DZg-F0-Pj1"/>
@@ -156,7 +202,7 @@
                                     </connections>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pw-gU-Nnm">
-                                    <rect key="frame" x="75.5" y="13.5" width="10" height="10"/>
+                                    <rect key="frame" x="58.5" y="13.5" width="10" height="10"/>
                                     <color key="backgroundColor" red="1" green="0.49411764705882355" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="10" id="YUC-wC-oXU"/>
@@ -184,19 +230,21 @@
                     </constraints>
                 </stackView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="IsL-iD-Nks"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="IsL-iD-Nks" firstAttribute="bottom" secondItem="uv1-Jk-TUe" secondAttribute="bottom" constant="5" id="5JZ-52-XjO"/>
                 <constraint firstItem="IsL-iD-Nks" firstAttribute="trailing" secondItem="uv1-Jk-TUe" secondAttribute="trailing" id="vnv-Dc-V2U"/>
                 <constraint firstItem="uv1-Jk-TUe" firstAttribute="leading" secondItem="IsL-iD-Nks" secondAttribute="leading" id="wR1-Ah-kGD"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="IsL-iD-Nks"/>
             <point key="canvasLocation" x="-441" y="120"/>
         </view>
     </objects>
     <resources>
         <image name="asset-tab" width="50" height="50"/>
         <image name="asset-tab-selected" width="50" height="50"/>
+        <image name="chat-tab" width="50" height="50"/>
+        <image name="chat-tab-selected" width="50" height="50"/>
         <image name="miniapp-tab" width="50" height="50"/>
         <image name="miniapp-tab-selected" width="50" height="50"/>
         <image name="setting-tab" width="50" height="50"/>
